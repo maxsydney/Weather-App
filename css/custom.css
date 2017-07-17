@@ -1,0 +1,48 @@
+.row {
+  margin: auto;
+  margin-top: 15px;
+}
+
+.visible {
+    margin: auto;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    font-family: "Mono";
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.invisible {
+    margin: auto;
+    width: 100%;
+    visibility: hidden;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.top {
+    height: 70px;
+    background: #669999;
+    color: white;
+    font-weight: bold;
+}
+
+.center {
+  padding-top: 20px;
+}
+
+.table-invisible {
+  visibility: hidden;
+}
+
+.table-visible {
+  visibility: visible;
+}
+
+.glyphicon {
+  position: absolute;
+  font-size: 30px;
+  top: 5px;
+  right: 15px;
+}

@@ -1,0 +1,35 @@
+<head>
+    <meta http-equiv="Pragma" content="no-cache">
+</head>
+
+<body>
+  <div class="modal-header">
+    <div class="container">
+      <div class="col-sm-4">
+        <h3 class="modal-title" id="modal-title">Weather for {{day.city}}, {{day.country}}</h3>
+        <h6>{{day.date}}</h6>
+      </div>
+      <div class="col-sm-1">
+        <img ng-src="http://openweathermap.org/img/w/{{day.img}}.png" />
+      </div>
+      <div class="col-sm-1">
+        <span ng-click="close()" class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-body" id="modal-body">
+    <dl class="dl-horizontal">
+      <dt>Max Temperature</dt>
+      <dd>{{day.max}} °C</dd>
+      <dt>Min Temperature</dt>
+      <dd>{{day.min}} °C</dd>
+      <dt>Description</dt>
+      <dd>{{day.description}}</dd>
+      <dt>Humidity</dt>
+      <dd>{{day.humidity}}%</dd>
+      <dt>Wind</dt>
+      <dd>{{day.windspeed}} {{day.direction}}</dd>
+    </dl>
+  </div>
+</body>
